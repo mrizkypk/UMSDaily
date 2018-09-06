@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/toolbar_menu_open"
+        android:title="Buka" />
+    <item android:id="@+id/toolbar_menu_download"
+        android:title="Unduh" />
+</menu>

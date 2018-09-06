@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/toolbar_menu_account"
+        android:title="Akun" />
+    <item android:id="@+id/toolbar_menu_quiz"
+        android:title="Kuesioner" />
+    <item android:id="@+id/toolbar_menu_logout"
+        android:title="Keluar" />
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/layer_list_item_room_chat_message_left_reply_border">
+        <shape
+            android:shape="rectangle">
+            <!-- Set the border color of your layout here -->
+            <solid android:color="#DDDDDD" />
+
+        </shape>
+    </item>
+
+    <!-- This is for border bottom but
+    you can change this according to your need -->
+    <item android:left="4dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#F5F5F5" />
+        </shape>
+    </item>
+
+</layer-list>

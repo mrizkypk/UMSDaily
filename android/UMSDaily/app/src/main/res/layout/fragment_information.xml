@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_information_layout"
+    android:clickable="true"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/fragment_information_container_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/toolbar_elevation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <ImageView
+            android:id="@+id/fragment_information_image_toolbar_logo"
+            android:src="@drawable/ic_information"
+            android:layout_width="@dimen/toolbar_logo_width"
+            android:layout_height="@dimen/toolbar_logo_height"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            />
+        <TextView
+            android:id="@+id/fragment_information_text_toolbar_title"
+            android:text="Informasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/fragment_information_image_toolbar_logo"
+            android:textColor="#FAFAFA"
+            android:textSize="@dimen/toolbar_title_text_size"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_information_container_information"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_information_container_toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_information_bottom_navigation_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/fragment_information_text_header_one"
+            android:text="Akademik"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/fragment_information_container_information_khs"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_below="@id/fragment_information_text_header_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fragment_information_image_information_khs"
+                android:src="@drawable/ic_book"
+                android:tint="@color/colorPrimary"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment_information_text_information_khs"
+                android:text="KHS"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fragment_information_container_information_study"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_below="@id/fragment_information_container_information_khs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fragment_information_image_information_study"
+                android:src="@drawable/ic_chart"
+                android:tint="@color/colorPrimary"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment_information_text_information_study"
+                android:text="Perkembangan Studi"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fragment_information_container_information_bill"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_below="@id/fragment_information_container_information_study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fragment_information_image_information_bill"
+                android:src="@drawable/ic_money"
+                android:tint="@color/colorPrimary"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment_information_text_information_bill"
+                android:text="Tagihan"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fragment_information_container_information_announcement"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_below="@id/fragment_information_container_information_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fragment_information_image_information_announcement"
+                android:src="@drawable/ic_notification"
+                android:tint="@color/colorPrimary"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment_information_text_information_announcement"
+                android:text="Pengumuman"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment_information_badge_information2"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"
+                android:visibility="gone"
+                android:background="@drawable/circular_textview"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/fragment_information_text_header_two"
+            android:text="Aplikasi"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/fragment_information_container_information_announcement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/fragment_information_container_information_about"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_below="@id/fragment_information_text_header_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fragment_information_image_information_about"
+                android:src="@drawable/ic_star"
+                android:tint="@color/colorPrimary"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/fragment_information_text_information_about"
+                android:text="Tentang"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/fragment_information_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <View
+        android:id="@+id/fragment_information_bottom_navigation_border"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fragment_information_container_bottom_navigation"
+        />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragment_information_container_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_height"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/fragment_information_badge_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circular_textview"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/fragment_information_container_menu_home"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@id/fragment_information_container_menu_home"
+            app:layout_constraintTop_toTopOf="@id/fragment_information_container_menu_home" />
+
+        <TextView
+            android:id="@+id/fragment_information_badge_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circular_textview"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/fragment_information_container_menu_schedule"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@id/fragment_information_container_menu_schedule"
+            app:layout_constraintTop_toTopOf="@id/fragment_information_container_menu_schedule" />
+
+        <TextView
+            android:id="@+id/fragment_information_badge_assignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circular_textview"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/fragment_information_container_menu_assignment"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@id/fragment_information_container_menu_assignment"
+            app:layout_constraintTop_toTopOf="@id/fragment_information_container_menu_assignment" />
+
+        <TextView
+            android:id="@+id/fragment_information_badge_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circular_textview"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/fragment_information_container_menu_information"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@id/fragment_information_container_menu_information"
+            app:layout_constraintTop_toTopOf="@id/fragment_information_container_menu_information" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <LinearLayout
+            android:id="@+id/fragment_information_container_menu_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/guideline1"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/fragment_information_button_menu_home"
+                android:layout_width="@dimen/bottom_navigation_icon_width"
+                android:layout_height="@dimen/bottom_navigation_icon_height"
+                android:background="@drawable/ic_home"
+                android:backgroundTint="@color/colorMenu" />
+
+            <TextView
+                android:id="@+id/fragment_information_text_menu_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beranda"
+                android:textColor="@color/textColorMenu"
+                android:textSize="@dimen/bottom_navigation_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_information_container_menu_schedule"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/guideline2"
+            app:layout_constraintStart_toEndOf="@id/guideline1">
+
+            <Button
+                android:id="@+id/fragment_information_button_menu_schedule"
+                android:layout_width="@dimen/bottom_navigation_icon_width"
+                android:layout_height="@dimen/bottom_navigation_icon_height"
+                android:background="@drawable/ic_schedule"
+                android:backgroundTint="@color/colorMenu" />
+
+            <TextView
+                android:id="@+id/fragment_information_text_menu_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jadwal"
+                android:textColor="@color/textColorMenu"
+                android:textSize="@dimen/bottom_navigation_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_information_container_menu_assignment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/guideline3"
+            app:layout_constraintStart_toEndOf="@id/guideline2">
+
+            <Button
+                android:id="@+id/fragment_information_button_menu_assignment"
+                android:layout_width="@dimen/bottom_navigation_icon_width"
+                android:layout_height="@dimen/bottom_navigation_icon_height"
+                android:background="@drawable/ic_assignment"
+                android:backgroundTint="@color/colorMenu" />
+
+            <TextView
+                android:id="@+id/fragment_information_text_menu_assignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tugas"
+                android:textColor="@color/textColorMenu"
+                android:textSize="@dimen/bottom_navigation_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_information_container_menu_information"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/guideline4"
+            app:layout_constraintStart_toEndOf="@id/guideline3">
+
+            <Button
+                android:id="@+id/fragment_information_button_menu_information"
+                android:layout_width="@dimen/bottom_navigation_icon_width"
+                android:layout_height="@dimen/bottom_navigation_icon_height"
+                android:background="@drawable/ic_information"
+                android:backgroundTint="@color/colorMenuSelected" />
+
+            <TextView
+                android:id="@+id/fragment_information_text_menu_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi"
+                android:textColor="@color/textColorMenuSelected"
+                android:textSize="@dimen/bottom_navigation_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_information_container_menu_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline4">
+
+            <Button
+                android:id="@+id/fragment_information_button_menu_search"
+                android:layout_width="@dimen/bottom_navigation_icon_width"
+                android:layout_height="@dimen/bottom_navigation_icon_height"
+                android:background="@drawable/ic_search"
+                android:backgroundTint="@color/colorMenu" />
+
+            <TextView
+                android:id="@+id/fragment_information_text_menu_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pencarian"
+                android:textColor="@color/textColorMenu"
+                android:textSize="@dimen/bottom_navigation_text_size" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

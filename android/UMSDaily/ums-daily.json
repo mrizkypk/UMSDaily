@@ -1,0 +1,62 @@
+{
+	"student" : {
+		"l200144020" : {
+			"name" : "Moch Rizky Prasetya Kurniadi"
+		},
+		"l200144099" : {
+			"name" : "Boruto Uzumaki"
+		}
+	},
+	"course" : {
+		"tif10533" : {
+			"title" : "Agama",
+			"member" : {
+				"l200144020" : true,
+				"l200144099" : true
+			}
+		},
+		"ums10112" : {
+			"title" : "Kalkulus",
+			"member" : {
+				"l200144020" : true
+			}
+		}
+	}, 
+	"chat" : {
+		"tif10533" : [ null, {
+			"title" : "Agama",
+	    	"message" : "Ohayou",
+	     	"sender_id" : "l200144020",
+	     	"sender_name" : "Rizky",
+	     	"delivered" : {
+	     		"l200144020" : 1213131
+	     	},
+	     	"read" : {
+	     		"l200144020" : 1231211
+	     	}
+	    } ],
+	    "ums10112" : [ null, {
+	    	"title" : "Agama",
+	    	"sender_id" : "l200144020",
+	    	"sender_name" : "Rizky",
+	     	"delivered" : {
+	     		"l200144099" : 1213131
+	     	},
+	     	"read" : {
+	     		"l200144099" : 1231211
+	     	},
+	     	"message" : "Assalamualaikum"
+	    }, {
+	    	"title" : "Kalkulus",
+	    	"sender_id" : "l200144099",
+	    	"sender_name" : "Boruto",
+	     	"delivered" : {
+	     		"l200144020" : 1213131
+	     	},
+	     	"read" : {
+	     		"l200144020" : 1231211
+	     	},
+	     	"message" : "Walaikumsalam"
+	    } ]
+	}
+}

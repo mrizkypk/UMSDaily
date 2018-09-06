@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuizActivity">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_header"
+        android:text="Kuesioner Sistem Informasi UMS Daily"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:id="@+id/border_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        app:layout_constraintTop_toBottomOf="@id/text_header"/>
+    <LinearLayout
+        android:id="@+id/container_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/border_1">
+        <TextView
+            android:id="@+id/text_user_id"
+            android:text="ID: L200144020"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_user_name"
+            android:text="Nama: Moch Rizky Prasetya Kurniadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_user_id"/>
+        <TextView
+            android:id="@+id/text_user_type"
+            android:text="Sebagai: Mahasiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_user_id"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/border_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        app:layout_constraintTop_toBottomOf="@id/container_user"/>
+
+    <LinearLayout
+        android:id="@+id/container_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/border_2">>
+        <TextView
+            android:id="@+id/text_guide_header"
+            android:text="Petunjuk pengisian kuesioner:"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_guide_1"
+            android:text="* Geser &quot;Seekbar&quot; yang ada di bawah pernyataan untuk memberikan penilaian anda."
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_guide_2"
+            android:text="* Dalam mengisi kuesioner mohon untuk mengisi seluruh penilaian pada pernyataan yang ada."
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_guide_3"
+            android:text="* Atas perhatian dan waktu yang Bapak/Ibu/Saudara/i berikan saya ucapkan terima kasih."
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/border_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        app:layout_constraintTop_toBottomOf="@id/container_guide"/>
+
+    <RelativeLayout
+        android:id="@+id/container_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/border_3"
+        >
+        <TextView
+            android:id="@+id/text_header_1"
+            android:text="I. Manfaat Sistem Informasi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/text_quiz_1"
+            android:text="1. Sistem Informasi UMS Daily dapat memaksimalkan penggunaan smartphone untuk menunjang kegiatan belajar."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/text_header_1"
+            />
+        <SeekBar
+            android:id="@+id/seekbar_quiz_1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_quiz_1"
+            />
+        <TextView
+            android:id="@+id/text_count_quiz_1"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/seekbar_quiz_1"
+            android:layout_below="@id/text_quiz_1" />
+
+        <TextView
+            android:id="@+id/text_quiz_2"
+            android:text="2. Sistem Informasi UMS Daily dapat meminimalisir dampak negatif penggunaan smartphone yang berlebihan dan tidak tepat."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/text_count_quiz_1"
+            />
+        <SeekBar
+            android:id="@+id/seekbar_quiz_2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_quiz_2"
+            />
+        <TextView
+            android:id="@+id/text_count_quiz_2"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/seekbar_quiz_2"
+            android:layout_below="@id/text_quiz_2" />
+
+        <TextView
+            android:id="@+id/text_header_2"
+            android:text="II. Fungsi Sistem Informasi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:layout_below="@id/text_count_quiz_2"
+            />
+
+        <TextView
+            android:id="@+id/text_quiz_3"
+            android:text="3. Fungsi yang disediakan oleh Sistem Informasi UMS Daily memberikan efisiensi dan efektifitas dalam penggunaan Sistem Informasi Akademik."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/text_header_2"
+            />
+        <SeekBar
+            android:id="@+id/seekbar_quiz_3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_quiz_3"
+            />
+        <TextView
+            android:id="@+id/text_count_quiz_3"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/seekbar_quiz_3"
+            android:layout_below="@id/text_quiz_3" />
+
+        <TextView
+            android:id="@+id/text_header_3"
+            android:text="III. Estetika Sistem Informasi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:layout_below="@id/text_count_quiz_3"
+            />
+
+        <TextView
+            android:id="@+id/text_quiz_4"
+            android:text="4. Antarmuka Sistem Informasi UMS Daily menarik, rapi, dan terstruktur."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/text_header_3"
+            />
+        <SeekBar
+            android:id="@+id/seekbar_quiz_4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_quiz_4"
+            />
+        <TextView
+            android:id="@+id/text_count_quiz_4"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/seekbar_quiz_4"
+            android:layout_below="@id/text_quiz_4" />
+
+        <TextView
+            android:id="@+id/text_header_4"
+            android:text="IV. Pengembangan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:layout_below="@id/text_count_quiz_4"
+            />
+
+        <TextView
+            android:id="@+id/text_quiz_5"
+            android:text="5. Sistem Informasi UMS Daily layak untuk dikembangkan."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/text_header_4"
+            />
+        <SeekBar
+            android:id="@+id/seekbar_quiz_5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_quiz_5"
+            />
+        <TextView
+            android:id="@+id/text_count_quiz_5"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/seekbar_quiz_5"
+            android:layout_below="@id/text_quiz_5" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button_quiz_submit"
+        android:text="Simpan"
+        android:textColor="#FFF"
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_quiz"
+        />
+    <ProgressBar
+        android:id="@+id/progressbar_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_quiz"
+        />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

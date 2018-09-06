@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_room_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/fragment_room_container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/toolbar_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/fragment_room_container_toolbar_arrow_back"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:id="@+id/fragment_room_button_toolbar_arrow_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_arrow_back" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fragment_room_image_toolbar_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/fragment_room_container_toolbar_arrow_back"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fragment_room_text_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/fragment_room_image_toolbar_logo"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Title"
+            android:textColor="#FAFAFA"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fragment_room_text_toolbar_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_room_text_toolbar_title"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/fragment_room_image_toolbar_logo"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#EEEEEE"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:id="@+id/fragment_room_container_toolbar_more"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical|center_horizontal">
+            <Button
+                android:id="@+id/fragment_room_button_toolbar_more"
+                android:layout_width="@dimen/toolbar_more_width"
+                android:layout_height="@dimen/toolbar_logo_height"
+                android:background="@drawable/ic_more" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_room_text_label_image_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Gambar: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_room_container_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_room_recyclerview_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_room_text_label_user_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_room_text_label_image_count"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/fragment_room_text_label_file_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Berkas: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_room_recyclerview_image" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_room_recyclerview_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_room_text_label_user_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_room_text_label_file_count"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/fragment_room_text_label_user_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Anggota: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_room_recyclerview_file" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_room_recyclerview_user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_room_text_label_user_count"
+        app:layout_constraintVertical_bias="0" />
+</android.support.constraint.ConstraintLayout>
