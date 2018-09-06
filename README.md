@@ -25,7 +25,108 @@ Naskah publikasi skrispi aplikasi ini dapat dilihat di: http://eprints.ums.ac.id
 * Database yang digunakan adalah Firebase Real-time Database yang digunakan untuk fitur chat.
 * Sistem push notifikasi aplikasi ini menggunakan Firebase Cloud Messaging
 
+## Arsitektur Sistem
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/System-Design-1.PNG" width="450px" height="250px">
+</p>
+
+## UML
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/TA-UML.png" width="250px" height="450px">
+</p>
+
+## Diagram Aktivitas
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Activity%20Diagram%20Fix.png" width="250px" height="250px">
+</p>
+
+## Web User
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Webservice-User.png" width="450px" height="250px">
+</p>
+
+## Web Service Jadwal
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Webservice-Schedule.png" width="450px" height="250px">
+</p>
+
 ## Halaman Login
 <p align="center">
 <img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Login.png" width="250px" height="450px">
+</p>
+
+## Halaman Beranda Dosen
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Lecturer-Home.png" width="250px" height="450px">
+</p>
+
+## Halaman Beranda Staf
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Staff-Home.png" width="250px" height="450px">
+</p>
+
+## Halaman Beranda Mahasiswa
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student-Home.png" width="250px" height="450px">
+</p>
+
+## Halaman Informasi Mahasiswa
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student%2BInformation.png" width="250px" height="450px">
+</p>
+
+## Halaman Jadwal Mahasiswa
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student%2BSchedule.png" width="250px" height="450px">
+</p>
+
+## Halaman Pencarian Chat
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student%2BCompose.png" width="250px" height="450px">
+</p>
+
+## Halaman Hasil Pencarian Chat
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student%2BCompose%2BSearch.png" width="250px" height="450px">
+</p>
+
+## Halaman Pencarian Jadwal
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Screenshot_1532915857.png" width="250px" height="450px">
+</p>
+
+## Halaman Chat Room
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student%2BChat%2BRoom.png" width="250px" height="450px">
+</p>
+
+## Halaman Upload Chat Room
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Screenshot_1532923775.png" width="250px" height="450px">
+</p>
+
+## Halaman Manajemen Chat Room
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student%2BChat%2BRoom%2BDetail.png" width="250px" height="450px">
+</p>
+
+## Halaman Manajemen Gambar Chat Room
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student%2BChat%2BRoom%2BDetail%2BImage%2BList.png" width="250px" height="450px">
+</p>
+
+## Halaman Manajemen Berkas Chat Room
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Student%2BChat%2BRoom%2BDetail%2BFile%2BList.png" width="250px" height="450px">
+</p>
+
+## Halaman Tugas
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Screenshot_1532915834.png" width="250px" height="450px">
+</p>
+
+
+## Halaman Pengumuman
+<p align="center">
+<img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Screenshot_1532915843.png" width="250px" height="450px">
 </p>
