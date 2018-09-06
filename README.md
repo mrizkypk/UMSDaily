@@ -40,12 +40,12 @@ Naskah publikasi skrispi aplikasi ini dapat dilihat di: http://eprints.ums.ac.id
 <img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Activity%20Diagram%20Fix.png" width="250px" height="250px">
 </p>
 
-## Web User
+## Web Service User JSON
 <p align="center">
 <img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Webservice-User.png" width="450px" height="250px">
 </p>
 
-## Web Service Jadwal
+## Web Service Jadwal JSON
 <p align="center">
 <img src="https://raw.githubusercontent.com/mrizkypk/UMSDaily/master/screenshot/Webservice-Schedule.png" width="450px" height="250px">
 </p>
