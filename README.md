@@ -4,7 +4,7 @@ Aplikasi android sistem informasi akademik Universitas Muhammadiyah Surakarta ya
 
 ## Naskah Publikasi Skripsi
 
-Naskah publikasi skrispi aplikasi ini dapat dilihat di: http://eprints.ums.ac.id/66283/
+Naskah publikasi skripsi aplikasi ini dapat dilihat di: http://eprints.ums.ac.id/66283/
 
 ## Fitur
 
